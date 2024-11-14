@@ -1,0 +1,270 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@body:black;
+@container:linear-gradient(#B0C4DE ,#f0f0f0,#fffefe ,#B0C4DE);
+@infoprof:#555592;
+@infoh1:#191970;
+@main:linear-gradient(#B0C4DE ,#fffefe ,#B0C4DE);
+@projects:linear-gradient(#A9A9A9 ,#ffffff,#ffffff, #ffffff,#D3D3D3, #A9A9A9);
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+    background:@body;
+}
+.container{
+    width: 740px;
+    margin: 15px auto;
+    background:@container;
+}
+    header{
+        min-height: 150px;
+        margin: 35px auto 0 auto;
+        .photo{
+            min-height: 125px;
+        }
+            .photo img{
+              min-height: 124px;     
+            }
+        .information{
+            min-height: 125px;
+            padding-left: 20px;
+        }
+            .information .profile{
+                border-bottom: 3.5px solid @infoprof; 
+            }
+                .information h1{
+                    padding-top: 12px;
+                    color:@infoh1;
+                }
+                .information h3{
+                    padding-bottom: 12px;
+                }
+            .contact{
+                margin-top: 20px;
+                min-height: 12px;
+                span{
+                    min-height: 5px;
+                    width: 5px;
+                    background-color: black;
+                    border-radius: 50%;
+                    display: inline-block;
+                    position: relative;
+                    bottom: 3px;
+                }
+            }                        
+    }
+ main{
+        margin:10px auto;
+        min-height: 28vh;
+        background:@main;
+        h2{
+            text-align: center;
+            padding: 10px 0;
+        }
+        p{
+            text-align: justify;
+            padding: 12.5px 20px;
+        }
+    }
+   section{
+        margin:0 auto;
+        .language{
+      
+        }
+            .language h2{
+                text-align:center;
+                padding: 10px 0;
+            }
+            .language img{
+                height: 45px;
+                padding: 10px 5px;
+            }
+        .projects{
+            background:@projects;          
+        }
+            .projects h2{
+                text-align: center;
+                padding: 10px 0;
+            }
+            .projects h4{
+                padding-left: 20px;
+            }
+            .projects p{
+                padding: 0 20px;
+            }
+            .projects ul{
+                padding: 0 25px;
+            }
+                .projects ul li{
+                    padding-bottom: 10px;
+                }  
+    }     
+  footer{
+        margin:30px auto 0 auto;
+        padding-bottom: 5px;
+            .footer-box{
+                min-height: 15px;  
+            }
+            img{
+                height: 25px;
+            }                              
+    }
+/*Mobile*/
+@media only screen and (max-width: 480px){
+    .container{
+        width: 80%;
+        min-height: 0vh;
+        padding-top: 10px;
+    }
+        header{
+            font-size: 5vw;
+        }       
+            .photo{
+                text-align: center;
+                width: 100%;
+            }
+            .photo img{
+                width: 80%;
+            }
+            .information{
+                width: 80%;
+            }
+            main{
+                font-size: 5vw;
+                width: 90%;
+                min-height: 20vh;
+            }
+            section{
+                width: 90%;
+                font-size: 5vw;
+                min-height:100vh;
+                .language{
+                    width: 100%;
+                    text-align: center;
+                }
+                .projects{            
+                    width: 100%;
+                }
+            }
+            footer{
+                text-align: center;
+                width: 20%;          
+            }
+}
+/*Tablet*/
+@media only screen and (min-width: 481px) and (max-width:1023px){
+    .container{
+            width: 80%;
+            min-height: 0vh;
+            font-size: 20px;
+            padding-top: 10px;
+    }   
+    header{
+        width: 90%;
+        min-height: 30vh;
+        .photo{
+            display: inline-block;
+            margin-top: 15px;
+            width: 10%;
+            vertical-align: top;
+            img{
+                width: 25vw;
+                height: 24vh;         
+            }   
+        }
+        .information{
+            height: 5vh;
+            display: inline-block;
+            vertical-align: top;
+            width: 50% ;
+            margin-left: 25%;
+        }
+        .contact{
+            display: none;
+        }
+    
+    }
+    main{
+        width: 90%;
+        min-height: 20vh;
+    }
+    section{
+        width: 90%;
+        .language{
+            width: 90%;
+            text-align: center;
+        }
+        .projects{            
+            width: 100%;
+        }
+    }
+    footer{
+        width: 80%;
+        text-align: center;
+        img{
+            margin-left:18px;
+        }
+    }
+}
+/*Desktop*/
+@media only screen and (min-width: 1023px){
+    .container{
+        width: 740px;
+        padding: 20px;
+        min-height: 5vh;
+    }
+    header{
+        .photo{
+            display: inline-block;
+            img{
+                width: 195px;
+            }
+            margin-right: 25px;
+        }
+        .information{
+            display: inline-block;
+            vertical-align: top;
+            width: 475px;
+        }
+    }
+    main{
+        padding: 20px;
+    }
+    section{
+        .language{
+            width: 310px;
+            display: inline-block;
+        }
+        .projects{
+            width: 425px;
+            display: inline-block;
+            h4{
+                padding-left: 50px;
+            }
+            p{
+                padding: 0 50px;
+            }
+            ul{
+                padding: 0 25px;
+                li{
+                    margin-left: 25px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+    footer{
+      text-align: center;
+      .footer-box{
+          img{
+              margin-left: 15px;
+          }
+      }
+    }
+   
+ } 
+    
+    

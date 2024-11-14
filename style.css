@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+    background: black;
+}
+.container{
+    width: 740px;
+    margin: 0 auto;
+    height: 850px;
+    background-image: linear-gradient(#B0C4DE ,#f0f0f0,#fffefe ,#B0C4DE);
+}
+    header{
+        width: 700px;
+        height: 150px;
+        margin: 35px auto 0 auto;
+    }
+        header .photo{
+            width: 195px;
+            height: 125px;
+            display: inline-block;
+            margin-left: 2px;
+            margin-right: 23px;
+            margin-top: 15px;   
+        }
+            .photo img{
+                width: 195px;
+                height: 124px;
+                
+            }
+        header .information{
+            width: 475px;
+            height: 125px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 14px;
+        }
+            .information .profile{
+                border-bottom: 3.5px solid #555592; 
+            }
+                .information h1{
+                    padding-top: 12px;
+                    color: #191970;
+                }
+                .information h3{
+                    padding-bottom: 12px;
+                }
+                        .contact span{
+                        padding-top: 7.5px;
+                        display: inline-block;
+                        margin-right: 12px;
+                        font-size: 15px;
+                    }
+    main{
+        width: 700px;
+        margin:10px auto;
+        background-image: linear-gradient(#B0C4DE ,#fffefe ,#B0C4DE);
+    }
+        main h2{
+            text-align: center;
+            padding: 10px 0;
+        }
+        main p{
+            text-align: justify;
+            padding: 12.5px 20px;
+        }
+    section{
+        width: 700px;
+        margin: 10px auto;
+    }
+        .language{
+            display: inline-block;
+            width: 310px;
+            vertical-align: top
+        }
+            .language h2{
+                text-align:center;
+                padding: 10px 0;
+            }
+            .language img{
+                width:45px ;
+                height: 45px;
+                padding: 10px 5px;
+            }
+         .projects{
+             display: inline-block;
+             width: 385px;
+             background-image: linear-gradient(#A9A9A9 ,#ffffff,#ffffff, #ffffff,#D3D3D3, #A9A9A9);
+             
+         }
+            .projects h2{
+                text-align: center;
+                padding: 10px 0;
+            }
+            .projects h4{
+                padding-left: 20px;
+            }
+            .projects p{
+                padding: 0 20px;
+            }
+            .projects ul{
+                padding: 0 25px;
+            }
+            .projects ul li{
+                margin-left: 25px;
+                padding-bottom: 10px;
+            }      
+    footer{
+        margin:35px auto;
+        width: 700px;
+    }
+        .footer-box{
+            margin-left: 135px;
+        }
+        .footer-box span{
+            margin-right: 7.5px;
+        }
+             footer img{
+                width: 25px;
+                height: 25px;
+            }            
+                
